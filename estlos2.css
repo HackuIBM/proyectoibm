@@ -1,0 +1,114 @@
+.header{
+    height: 100vh;
+    width: 100%;
+}
+.navbar{
+    
+    padding: 8px 18px !important;
+    background-color:#262626;
+    
+
+}
+.nav-item .nav-link{
+    color: rgba(255,255,255,0.92);
+    font-size: 14px;
+    font-weight: 500;
+    position: relative;
+
+
+}
+.logo{
+    font-size: 2.5em;
+    font-family: "Acme", sans-serif;
+    color: rgba(255, 255, 255, 0.848) !important;
+}
+.img-pistones{
+   
+   
+    
+}
+.nav-item{
+    margin: 0px 10px;
+}
+.nav-link::after{
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: -1px;
+    background-color: rgb(255, 129, 57);
+    width: 0px;
+    height: 3px;
+    transition: 0.4s ease-in-out;
+
+
+}
+.nav-item:hover .nav-link::after{
+    width: 100%;
+
+}
+.nav-link:hover{
+    color: rgb(255, 129, 57);
+}
+.btn-navbar{
+    display: inline-block;
+    padding: 10px 43px;
+    border: rgb(129, 129, 129);
+    color: rgb(0, 0, 0);
+    border-radius: 100px;
+    text-decoration: none;
+    font-size: 1px;
+    font-weight: 600;
+    background-color: rgb(255, 255, 255);
+    transition: 0.2s ease;
+    
+
+
+}
+.btn-navbar:hover{
+    background-color: transparent;
+    color:rgb(255,129,57) ;
+    border: 1px solid rgb(255,129,57);
+}
+/*--nabar Start--->*/
+.content-home2{
+ height: 90vh;
+ width: 100%;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+.home-heading
+{
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 74px;
+}
+.btn-primary{
+color: rgb(255, 255, 255);
+padding: 5px 30px;
+background:black;
+border-radius: 15px;
+}
+
+@media (min-width: 769px) {
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+/* Estilos para pantallas de celulares (ancho máximo de 768px) */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .menu {
+        display: none; /* Ocultar menú en móviles */
+    }
+
+    .header {
+        text-align: center;
+    }
+}
